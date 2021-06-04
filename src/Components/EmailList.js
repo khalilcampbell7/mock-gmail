@@ -74,6 +74,9 @@ class EmailList extends React.Component {
 
     const send = await fetch('http://localhost:3001/send', {
         method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify(dataToSend)  
     })
 
