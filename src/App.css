@@ -80,7 +80,7 @@ html, body {
   color: white;
 }
 
-form {
+.createEmail {
   display: flex;
   flex-flow: column;
 }
@@ -95,7 +95,11 @@ button:hover {
   background-color: #808080;
 }
 
-form label {
+button:active {
+  background-color: #282c34;
+}
+
+.createEmail label {
   width: 10vw;
   text-align: left;
 }
