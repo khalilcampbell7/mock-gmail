@@ -3,13 +3,19 @@ html, body {
   margin: 0;
 }
 
-.header {
-  height: 3vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #808080;
-  color: white;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .App {
@@ -19,12 +25,6 @@ html, body {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -41,13 +41,13 @@ html, body {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  height: 3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #808080;
+  color: white;
 }
 
 .emailItem {
@@ -85,6 +85,11 @@ html, body {
   flex-flow: column;
 }
 
+.createEmail label {
+  width: 10vw;
+  text-align: left;
+}
+
 button {
   background-color: #282c34;
   border: 1px solid black;
@@ -99,7 +104,12 @@ button:active {
   background-color: #282c34;
 }
 
-.createEmail label {
-  width: 10vw;
-  text-align: left;
-}
+
+
+
+
+
+
+
+
+
